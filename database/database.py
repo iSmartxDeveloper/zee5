@@ -2,11 +2,10 @@ import os
 import threading
 
 from sqlalchemy import create_engine
-From sqlalchemy.dialects:mongodb.srv
 from sqlalchemy import Column, Integer
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
-
+From sqlalchemy.dialects:mongodb.srv
 
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
