@@ -5,7 +5,7 @@ import numpy
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 else:
-    from config import Config
+    from sample_config import Config
 
 from PIL import Image
 from pyrogram import Client, filters
